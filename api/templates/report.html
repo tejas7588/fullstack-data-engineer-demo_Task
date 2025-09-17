@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Report</title>
+</head>
+<body>
+    <h1>Data Report</h1>
+
+    {% if joke %}
+        <h3>Random Joke from API:</h3>
+        <p>{{ joke.setup }} - {{ joke.punchline }}</p>
+    {% else %}
+        <p>No joke available</p>
+    {% endif %}
+
+    <p>👉 Go to <a href="/api/items/">/api/items/</a> to test CRUD operations</p>
+</body>
+</html>
